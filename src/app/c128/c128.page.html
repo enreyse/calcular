@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title id="titulo">Calculo 128 Horas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+
+<ion-grid>
+    <ion-item >
+        <ion-icon  name="school" slot="start"></ion-icon>
+        <ion-label>EPE</ion-label>
+      </ion-item>
+  <ion-row>
+    <ion-col>
+      <ion-input  placeholder="EPE1"  max='7' min='1' step="0.01"  ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" type= 'number' [(ngModel)]= "epe1" ></ion-input>
+    </ion-col>
+    <ion-col>
+      <ion-input  placeholder="EPE2"   max='7' min='1' step="0.01"  ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" type= 'number' [(ngModel)]= "epe2" ></ion-input>
+    </ion-col>
+    <ion-col>
+      <ion-input  placeholder="EPE3"  max='7' min='1' step="0.01"  ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" type= 'number' [(ngModel)]= "epe3" ></ion-input>
+    </ion-col>
+    <ion-col>
+      <ion-input  placeholder="EPE4"  max='7' min='1' step="0.01"  ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" type= 'number' [(ngModel)]= "epe4" ></ion-input>
+    </ion-col>
+  </ion-row>
+ 
+    <ion-item >
+      <ion-icon  name="school" slot="start"></ion-icon>
+      <ion-label>EVA</ion-label>
+    </ion-item>
+   
+</ion-grid>
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-input  placeholder="EVA1" max='7' min='1' step="0.01"  ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" type= 'number' [(ngModel)]= "eva1" ></ion-input>
+    </ion-col>
+    <ion-col>
+      <ion-input  placeholder="EVA2" max='7' min='1' step="0.01"  ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" type= 'number' [(ngModel)]= "eva2" ></ion-input>
+    </ion-col>
+    <ion-col>
+      <ion-input  placeholder="EVA3"   max='7' min='1' step="0.01"  ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" type= 'number'[(ngModel)]= "eva3" ></ion-input>
+    </ion-col>
+    <ion-col>
+      <ion-input  placeholder="EVA4"   max='7' min='1' step="0.01"  ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" type= 'number'[(ngModel)]= "eva4" ></ion-input>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<div id="divex">
+<ion-item >
+    <ion-icon  name="school" slot="start"></ion-icon>
+    <ion-label>EXAMEN</ion-label>
+  </ion-item>
+
+  <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-input id="examen"  placeholder="EXAMEN"  max='7' min='1' step="0.01"  ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" type= 'number' [(ngModel)]= "examen" ></ion-input>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  
+    
+   <ion-row>
+    <ion-col align-self-start>
+      <ion-button color="danger" (click)="verhome()">Volver</ion-button>
+    </ion-col>
+     <ion-col align-self-end>
+      <ion-button  (click)="calcular()">Calcular</ion-button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

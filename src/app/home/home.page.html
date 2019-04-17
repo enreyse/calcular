@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+<ion-title>Calcular Notas</ion-title>
+<ion-buttons slot="start">
+  <ion-menu-button></ion-menu-button>
+</ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div><img src='assets/img/l.jpg'></div>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="center">
+          <ion-button color="dark" (click)="Verc32()">Notas 32 Hrs
+          </ion-button>
+        </ion-col>
+        <ion-col class="center">
+          <ion-button color="secondary" (click)="Verc64()">Notas 64 Hrs
+          </ion-button>
+        </ion-col>
+        <ion-col class="center">
+          <ion-button color="danger" (click)="Verc96()">Notas 96 Hrs
+          </ion-button>
+        </ion-col>
+        <ion-col class="center">
+          <ion-button color="tertiary" (click)="Verc128()">Notas 128 Hrs
+          </ion-button>
+        </ion-col>
+
+      </ion-row>
+
+    </ion-grid>
+
+</ion-content>

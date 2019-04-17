@@ -1,0 +1,59 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Calcular 96 Hrs</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-content>
+   
+      <ion-list>
+          <ion-item>
+              <ion-icon name="school" slot="start"></ion-icon>
+              <ion-label>EPE</ion-label>
+            </ion-item>
+          <ion-item>
+            <ion-label>EPE1: {{epe1}}</ion-label>  <ion-label>EPE2: {{epe2}}</ion-label><ion-label >EPE3: {{epe3}}</ion-label>
+          </ion-item>
+          <ion-item>
+              <ion-icon name="school" slot="start"></ion-icon>
+              <ion-label>EVA</ion-label>
+            </ion-item>
+          <ion-item>
+            <ion-label>EVA1: {{eva1}}</ion-label> <ion-label>EVA2: {{eva2}}</ion-label>  <ion-label>EVA3: {{eva3}}</ion-label>
+          </ion-item>
+          <div id="daexamen">
+            <ion-item >
+                <ion-icon name="school" slot="start"></ion-icon>
+                <ion-label>EXAMEN: {{examen}}</ion-label>
+              </ion-item>
+            </div>
+        </ion-list>
+        <ion-item class="ion-padding-horizontal">
+        <ion-icon name="school" slot="start"></ion-icon>
+        <strong> 
+        <ion-label color='danger'>NOTA FINAL: {{cleann}}</ion-label>
+      </strong>
+      </ion-item>
+      
+              <div><img src="{{prom7}}"></div>
+              <div id="fail"></div>
+        
+
+     
+   <ion-row>
+      <ion-col align-self-start>
+        <ion-button color="danger" (click)="popView()">Volver</ion-button>
+      </ion-col>
+       <ion-col align-self-end>
+        <ion-button  (click)="verhome()">menu principal</ion-button>
+      </ion-col>
+    </ion-row>
+   
+
+   
+
+
+  </ion-content>
+
+  
